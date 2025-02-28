@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://nest-ride-app.onrender.com/", // Link da API do Back-end
+    baseURL: "https://nest-ride-app.onrender.com/"
 });
 
 export const cadastrarUsuario = async (
