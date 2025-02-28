@@ -16,7 +16,6 @@ function App() {
           <Route path="/editarviagem/:id" element={<FormViagem />} />
           <Route path="/viagens" element={<ListaViagens />} />
           <Route path="/veiculos" element={<ListaVeiculos />} />
-
         </Routes>
         <Footer />
       </BrowserRouter>
