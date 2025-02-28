@@ -16,13 +16,15 @@ function Navbar() {
         {/* Logo e Nome (centralizado no Mobile) */}
         <div className="flex items-center md:w-auto py-2">
           <p>
-            <img
-              className="h-[4vh] mr-1"
-              src="https://ik.imagekit.io/3ov0fr7b9/usuarios/BORA%20AI.svg?updatedAt=1740689358462"
-              alt="PeopleHub Logo"
-            />
+            <Link to="/">
+              <img
+                className="h-[4vh] mr-1"
+                src="https://ik.imagekit.io/3ov0fr7b9/usuarios/BORA%20AI.svg?updatedAt=1740689358462"
+                alt="PeopleHub Logo"
+              />
+            </Link>
           </p>
-          <Link to="/home">
+          <Link to="/">
             <AiOutlineCar size={32} color="#ffa500" />
           </Link>
         </div>
@@ -114,7 +116,7 @@ function Navbar() {
               <LineVertical size={32} color="gray" />
             </li>
             <li className="hover:text-blue-500 cursor-pointer">
-              <Link to={'/veiculos'}>Veículos</Link>
+              <Link to={"/veiculos"}>Veículos</Link>
             </li>
             <li>
               <LineVertical size={32} color="gray" />

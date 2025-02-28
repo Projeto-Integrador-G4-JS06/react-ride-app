@@ -18,6 +18,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path='/' element={<Home />} />
           <Route path='/buscarviagens/:bairro_partida/:cidade_partida/:bairro_destino/:cidade_destino/:data_partida' element={<BuscarViagens />} />
           <Route path="/cadastrarviagem" element={<FormViagem />} />
