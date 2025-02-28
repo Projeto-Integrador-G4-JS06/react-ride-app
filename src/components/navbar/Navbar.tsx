@@ -3,7 +3,6 @@ import { useState } from "react";
 import { AiOutlineCar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false); // Controlar quando o menu hambúrguer aparece (mobile)
 
@@ -48,19 +47,19 @@ function Navbar() {
         <nav className="container mx-auto w-2/4 px-2 absolute top-[81px] right-0  bg-[#293241] text-white py-2 xl:hidden">
           <ul className="flex flex-col items-start px-4">
             <Link
-              to=""
+              to="/"
               className="w-full py-3  border-b border-gray-400 hover:text-gray-400 cursor-pointer"
             >
               Login
             </Link>
             <Link
-              to=""
+              to="/"
               className="w-full py-3 border-b hover:text-gray-400 cursor-pointer border-gray-400"
             >
               Procurar Viagem
             </Link>
             <Link
-              to=""
+              to="/"
               className="w-full py-3 border-b hover:text-gray-400 cursor-pointer border-gray-400"
             >
               Viagens
@@ -95,7 +94,7 @@ function Navbar() {
       <div className="container mx-auto px-8 hidden xl:flex items-center justify-between py-4">
         {/* Logo e Nome (lado esquerdo) */}
         <div className="flex items-center">
-          <Link to="/home">
+          <Link to="/">
             <AiOutlineCar size={40} color="#ffa500" />
           </Link>
         </div>
