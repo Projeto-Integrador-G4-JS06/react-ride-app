@@ -2,6 +2,7 @@ import { List, User, LineVertical, SignOut } from "@phosphor-icons/react";
 import { useState } from "react";
 import { AiOutlineCar } from "react-icons/ai";
 import { Link } from "react-router-dom";
+//comentario
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false); // Controlar quando o menu hambúrguer aparece (mobile)
