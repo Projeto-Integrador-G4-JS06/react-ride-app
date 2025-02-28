@@ -5,6 +5,7 @@ import ListaViagens from "./components/viagem/listaviagem/ListaViagem";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import ListaVeiculos from "./components/veiculos/listaveiculos/ListaVeiculos";
+import FormVeiculo from "./components/veiculos/veiculocadastro/FormVeiculo";
 import Sobre from "./pages/sobre/Sobre";
 import DeletarViagem from "./components/viagem/deletarviagem/DeletarViagem";
 import DeletarVeiculo from "./components/veiculos/deletarveiculo/DeletarVeiculo";
@@ -25,6 +26,8 @@ function App() {
           <Route path="/editarviagem/:id" element={<FormViagem />} />
           <Route path="/viagens" element={<ListaViagens />} />
           <Route path="/veiculos" element={<ListaVeiculos />} />
+          <Route path="/cadastrarveiculo" element={<FormVeiculo />} />
+          <Route path="/atualizarveiculo/:id" element={<FormVeiculo />} />
           <Route path="/deletarviagem/:id" element={<DeletarViagem />} />
           <Route path="/deletarveiculo/:id" element={<DeletarVeiculo />} />
           <Route path="/sobre" element={<Sobre />} />
