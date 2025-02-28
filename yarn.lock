@@ -1906,6 +1906,11 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
+swiper@^11.2.4:
+  version "11.2.4"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-11.2.4.tgz#4d1b55e07f909957e0406bdbff81b850b9dc8aeb"
+  integrity sha512-DTtglrsFfMYytid+oNy4QI3t2N2+XhhwSYbnyOhlwBmvY8Bkoj3ombK1/b80w8vDpQ+Lqlnbm+0737+i32MrcA==
+
 tailwindcss@4.0.8, tailwindcss@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-4.0.8.tgz#25d7fed091aacd16e2a3b8b86d51eea0a482fb1c"

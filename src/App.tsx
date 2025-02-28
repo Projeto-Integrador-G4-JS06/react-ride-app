@@ -1,10 +1,11 @@
-import Home from "./pages/home/Home"
+import Sobre from "./pages/sobre/Sobre"
+
 
 function App() {
 
   return (
     <>
-      <Home />
+      <Sobre />
     </>
   )
 }
