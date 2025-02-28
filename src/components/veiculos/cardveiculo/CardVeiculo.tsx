@@ -1,5 +1,6 @@
 import { Pencil, Trash } from "@phosphor-icons/react";
 import Veiculo from "../../../models/Veiculo";
+import { Link } from "react-router-dom";
 
 interface CardVeiculoProps {
   veiculo: Veiculo;
@@ -15,10 +16,10 @@ function CardVeiculo({ veiculo }: CardVeiculoProps) {
           color="#293241"
           className="mr-1 hover:fill-teal-800"
         />
-        {/* </Link> */}
-        {/* <Link to={`/deletarveiculo/${veiculo.id}`}> */}
+        {/* </Link>  */}
+        <Link to={`/deletarveiculo/${veiculo.id}`}>
         <Trash size={24} color="#293241" className="mr-1 hover:fill-red-700" />
-        {/* </Link> */}
+        </Link>
       </div>
 
       <div className="py-4">

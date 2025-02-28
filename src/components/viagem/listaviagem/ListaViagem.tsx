@@ -5,7 +5,7 @@ import { DNA } from "react-loader-spinner";
 import CardViagem from "../cardviagem/CardViagem";
 import { Plus } from "@phosphor-icons/react";
 
-function ListaViagens() {
+function ListaViagens() { 
   const [viagens, setViagens] = useState<Viagem[]>([]);
 
   async function buscarViagens() {
