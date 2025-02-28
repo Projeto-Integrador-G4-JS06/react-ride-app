@@ -25,6 +25,8 @@ function FormViagem() {
     itens: "",
     disponibilidade: false,
     viagem: null,
+    criado_em: "",
+    atualizado_em: "",
   });
 
   const [viagem, setViagem] = useState<Viagem>({} as Viagem);
