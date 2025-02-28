@@ -6,23 +6,7 @@ import Veiculo from "../../../models/Veiculo";
 function FormVeiculo() {
     const navigate = useNavigate();
     const [isLoading, setIsLoading] = useState<boolean>(false);
-    const [veiculo, setVeiculo] = useState<Veiculo>({
-        id: 0,
-        modelo: "",
-        marca: "",
-        ano: 0,
-        cor: "",
-        tipo: "",
-        foto: "",
-        placa: "",
-        tipo_combustivel: "",
-        tipo_transmissao: "",
-        capacidade: 0,
-        num_assentos: 0,
-        itens: "",
-        disponibilidade: true, // Valor fixo
-        viagem: null,
-    });
+    const [veiculo, setVeiculo] = useState<Veiculo>({} as Veiculo);
 
     const { id } = useParams<{ id: string }>();
 
@@ -59,6 +43,7 @@ function FormVeiculo() {
             try {
                 await atualizar(`/veiculos/atualizar`, veiculo, setVeiculo, {});
                 alert("O veiculo foi atualizado com sucesso!");
+                retornar();
             } catch (error: any) {
                 if (error.toString().includes("403")) {
                     console.log("erro");
@@ -359,7 +344,20 @@ function FormVeiculo() {
                         />
                     </div>
                 </div>
-
+                <select
+                    name="disponibilidade"
+                    className="border p-2 rounded-lg"
+                    value={veiculo.disponibilidade ? "true" : "false"}
+                    onChange={(e: ChangeEvent<HTMLSelectElement>) => {
+                        setVeiculo({
+                            ...veiculo,
+                            disponibilidade: e.target.value === "true", // Converte string para booleano
+                        });
+                    }}
+                >
+                    <option value="true">Disponível</option>
+                    <option value="false">Indisponível</option>
+                </select>
                 <button
                     type="submit"
                     className="mt-4 rounded-lg bg-indigo-500 hover:bg-indigo-700 text-white font-bold w-full py-2"
