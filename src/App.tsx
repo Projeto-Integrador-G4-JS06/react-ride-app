@@ -28,7 +28,6 @@ function App() {
           <Route path="/deletarviagem/:id" element={<DeletarViagem />} />
           <Route path="/deletarveiculo/:id" element={<DeletarVeiculo />} />
           <Route path="/sobre" element={<Sobre />} />
-          <Route path="/card" element={<CardViagem />} />
         </Routes>
         <Footer />
       </BrowserRouter>
