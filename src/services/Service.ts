@@ -27,6 +27,15 @@ export const listar = async (
   setDados(resposta.data);
 };
 
+export const buscarViagens = async (
+  url: string,
+  setDados: Function,
+  
+) => {
+  const resposta = await api.get(url);
+  setDados(resposta.data);
+};
+
 export const cadastrar = async (
   url: string,
   dados: Object,
