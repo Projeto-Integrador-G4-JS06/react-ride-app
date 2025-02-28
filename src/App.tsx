@@ -1,23 +1,24 @@
-
-import './App.css'
-import Navbar from './components/navbar/Navbar'
-import { BrowserRouter } from 'react-router-dom'
-import Footer from './components/footer/Footer'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import FormViagem from "./components/viagem/viagemcadastro/FormViagem";
+import ListaViagens from "./components/viagem/listaviagem/ListaViagem";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 
 function App() {
-  
-
   return (
     <>
-    
-   <BrowserRouter>
-            <Navbar />
-            <div className="h-[70vh]"></div>
-            <Footer />
-   </BrowserRouter>
-
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/cadastrarviagem" element={<FormViagem />} />
+          <Route path="/editarviagem/:id" element={<FormViagem />} />
+          <Route path="/viagens" element={<ListaViagens />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
