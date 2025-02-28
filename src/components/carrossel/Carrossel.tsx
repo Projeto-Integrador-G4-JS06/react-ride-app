@@ -4,8 +4,6 @@ import SwiperCore from 'swiper'
 import { SwiperSlide, Swiper } from 'swiper/react';
 import CardSobre from '../cardsobre/CardSobre';
 
-
-
 SwiperCore.use([Navigation, Pagination]);
 
 const CardsDados = [
