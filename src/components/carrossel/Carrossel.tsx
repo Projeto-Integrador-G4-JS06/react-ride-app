@@ -70,7 +70,7 @@ const CardsDados = [
 function Carrossel(){
     return (
 
-        <div className='flex items-center'>
+        <div className='flex items-center w-full'>
             <Swiper
                 spaceBetween={10}
                 slidesPerView={1}

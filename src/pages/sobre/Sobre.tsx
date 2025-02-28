@@ -6,8 +6,8 @@ function Sobre() {
             <section className="w-full h-full flex justify-center items-center bg-gray-200 p-10">
                 <div className="container mx-auto px-4 flex flex-col lg:items-center lg:justify-between text-gray-900">
                     <div className="flex flex-col lg:flex-row items-center justify-center">
-                        <div className='text-center  lg:w-1/2 px-4'>
-                            <h2 className='text-5xl font-bold text-[var(--color-aqua-dark)]'>
+                        <div className='text-center lg:w-1/2 px-4'>
+                            <h2 className='md:text-5xl text-4xl font-bold text-[var(--color-aqua-dark)]'>
                                 Quem Somos Nós?
                             </h2>
                             <p className='text-left text-base md:text-xl lg:text-2xl mb-8 text-gray-900 pt-8'>
@@ -22,9 +22,11 @@ function Sobre() {
                             />
                         </div>
                     </div>
-                    <div className="w-full pt-10 max-w-screen-md mx-auto overflow-hidden">
-                        <h2 className='text-5xl font-bold text-[var(--color-aqua-dark)]'>Integrantes da Equipe</h2>
-                        <Carrossel />
+                    <div className="w-full pt-10 max-w-screen-lg mx-auto overflow-hidden">
+                        <h2 className='text-4xl font-bold text-[var(--color-aqua-dark)]'>Integrantes da Equipe</h2>
+                        <div className="w-full">
+                            <Carrossel />
+                        </div>
                     </div>
                 </div>
             </section>
