@@ -10,8 +10,10 @@ function Sobre() {
                             <h2 className='md:text-5xl text-4xl font-bold text-[var(--color-aqua-dark)]'>
                                 Quem Somos Nós?
                             </h2>
-                            <p className='text-left text-base md:text-xl lg:text-2xl mb-8 text-gray-900 pt-8'>
-                                O PeopleHub é uma API escalável para gestão de colaboradores em Recursos Humanos. Permite cadastrar, consultar, atualizar e remover funcionários com segurança, armazenando dados como nome, cargo, salário e admissão. Intuitiva e eficiente, simplifica a administração de dados e otimiza processos de RH.
+                            <p className='text-right text-base md:text-xl lg:text-2xl mb-8 text-gray-900 pt-8'>
+                                O BoraAí é uma plataforma de caronas compartilhadas que conecta motoristas e passageiros
+                                que possuem trajetos em comum. Com foco na praticidade, economia e sustentabilidade,
+                                a aplicação permite criar e gerenciar viagens, promovendo a redução de custos e o impacto ambiental positivo.
                             </p>
                         </div>
                         <div className="mt-8 lg:mt-0 lg:w-1/2 flex w-full justify-center">
