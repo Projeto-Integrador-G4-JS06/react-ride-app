@@ -145,7 +145,7 @@ function FormViagem() {
   const carregandoVeiculo = veiculo.modelo === "";
 
   return (
-    <div className="container flex flex-col mx-auto items-center flex-wrap">
+    <div className="container flex flex-col mx-auto items-center flex-wrap p-8">
       <h1 className="text-4xl text-center my-8">
         {" "}
         {id !== undefined ? "Editar Viagem" : "Cadastrar Viagem"}
