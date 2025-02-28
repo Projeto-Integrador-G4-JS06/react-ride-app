@@ -1,10 +1,21 @@
-import Home from "./pages/home/Home"
+
+import './App.css'
+import Navbar from './components/navbar/Navbar'
+import { BrowserRouter } from 'react-router-dom'
+import Footer from './components/footer/Footer'
 
 function App() {
+  
 
   return (
     <>
-      <Home />
+    
+   <BrowserRouter>
+            <Navbar />
+            <div className="h-[70vh]"></div>
+            <Footer />
+   </BrowserRouter>
+
     </>
   )
 }
