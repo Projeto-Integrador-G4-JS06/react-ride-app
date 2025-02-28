@@ -1,4 +1,11 @@
-import { Calendar, CurrencyCircleDollar, HourglassMedium, MapPin, Pencil, Trash } from "@phosphor-icons/react";
+import {
+  Calendar,
+  CurrencyCircleDollar,
+  HourglassMedium,
+  MapPin,
+  Pencil,
+  Trash,
+} from "@phosphor-icons/react";
 import Viagem from "../../../models/Viagem";
 import { Link } from "react-router-dom";
 
@@ -6,27 +13,26 @@ interface CardViagemProps {
   viagem: Viagem;
 }
 
-function CardViagem({ viagem }: CardViagemProps) { 
-
+function CardViagem({ viagem }: CardViagemProps) {
   return (
     <div className="flex flex-col my-10 mx-10 overflow-hidden bg-gray-50 w-[13.5rem] h-[25rem] rounded-lg">
       <div className="flex  border-amber-500 bg-orange py-1.5 justify-between pt-2 pr-2">
         <p className="text-[#293241] mx-1.5">Viagem</p>
-        {/* <Link to={`/editarviagem/${viagem.id}`}> */}
         <div className="flex ">
-          <Pencil
-            size={24}
-            color="#293241"
-            className="mr-1 hover:fill-teal-800"
-          />
-          {/* </Link> */}
-          {/* <Link to={`/deletarviagem/${viagem.id}`}> */}
-          <Trash
-            size={24}
-            color="#293241"
-            className="mr-1 hover:fill-red-700"
-          />
-          {/* </Link> */}
+          <Link to={`/editarviagem/${viagem.id}`}>
+            <Pencil
+              size={24}
+              color="#293241"
+              className="mr-1 hover:fill-teal-800"
+            />
+          </Link>
+          <Link to={`/deletarviagem/${viagem.id}`}>
+            <Trash
+              size={24}
+              color="#293241"
+              className="mr-1 hover:fill-red-700"
+            />
+          </Link>
         </div>
       </div>
       <div className="p-4 flex flex-col items-start ">
