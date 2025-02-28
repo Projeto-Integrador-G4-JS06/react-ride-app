@@ -10,13 +10,14 @@ function CardVeiculo({ veiculo }: CardVeiculoProps) {
   return (
     <div className="flex flex-col justify-between my-10 mx-10 overflow-hidden bg-gray-50 w-[13.5rem] h-[20rem] rounded-lg">
       <div className="flex items-end  border-amber-500 bg-orange py-1.5 justify-end pt-2 pr-2">
-        {/* <Link to={`/editarveiculo/${veiculo.id}`}> */}
+         <Link to={`/atualizarveiculo/${veiculo.id}`}> 
         <Pencil
           size={24}
           color="#293241"
           className="mr-1 hover:fill-teal-800"
+          
         />
-        {/* </Link>  */}
+         </Link>  
         <Link to={`/deletarveiculo/${veiculo.id}`}>
         <Trash size={24} color="#293241" className="mr-1 hover:fill-red-700" />
         </Link>
