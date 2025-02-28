@@ -45,22 +45,40 @@ function Navbar() {
       {menuOpen && (
         <nav className="container mx-auto w-2/4 px-2 absolute top-[81px] right-0  bg-[#293241] text-white py-2 xl:hidden">
           <ul className="flex flex-col items-start px-4">
-            <Link to="" className="w-full py-3  border-b border-gray-400 hover:text-gray-400 cursor-pointer">
+            <Link
+              to=""
+              className="w-full py-3  border-b border-gray-400 hover:text-gray-400 cursor-pointer"
+            >
               Login
             </Link>
-            <Link to="" className="w-full py-3 border-b hover:text-gray-400 cursor-pointer border-gray-400">
+            <Link
+              to=""
+              className="w-full py-3 border-b hover:text-gray-400 cursor-pointer border-gray-400"
+            >
               Procurar Viagem
             </Link>
-            <Link to="" className="w-full py-3 border-b hover:text-gray-400 cursor-pointer border-gray-400">
+            <Link
+              to=""
+              className="w-full py-3 border-b hover:text-gray-400 cursor-pointer border-gray-400"
+            >
               Viagens
             </Link>
-            <Link to="" className="w-full py-3 border-b hover:text-gray-400 cursor-pointer border-gray-400">
+            <Link
+              to=""
+              className="w-full py-3 border-b hover:text-gray-400 cursor-pointer border-gray-400"
+            >
               Veículos
             </Link>
-            <Link to="/sobre" className="w-full py-3  border-b hover:text-gray-400 cursor-pointer border-gray-400">
+            <Link
+              to="/sobre"
+              className="w-full py-3  border-b hover:text-gray-400 cursor-pointer border-gray-400"
+            >
               Sobre
             </Link>
-            <Link to="" className="w-full py-3 hover:text-gray-400 cursor-pointer">
+            <Link
+              to=""
+              className="w-full py-3 hover:text-gray-400 cursor-pointer"
+            >
               Sair
             </Link>
           </ul>
@@ -89,15 +107,21 @@ function Navbar() {
             <li>
               <LineVertical size={32} color="gray" />
             </li>
-            <li className="hover:text-blue-500 cursor-pointer">Viagem</li>
+            <li className="hover:text-blue-500 cursor-pointer">
+              <Link to={"/viagens"}> Viagens</Link>
+            </li>
             <li>
               <LineVertical size={32} color="gray" />
             </li>
-            <li className="hover:text-blue-500 cursor-pointer">Veiculo</li>
+            <li className="hover:text-blue-500 cursor-pointer">
+              <Link to={'/veiculos'}>Veículos</Link>
+            </li>
             <li>
               <LineVertical size={32} color="gray" />
             </li>
-            <li className="hover:text-blue-500 cursor-pointer">Sobre</li>
+            <li className="hover:text-blue-500 cursor-pointer">
+              <Link to={"/sobre"}>Sobre</Link>
+            </li>
             <li>
               <LineVertical size={32} color="gray" />
             </li>
