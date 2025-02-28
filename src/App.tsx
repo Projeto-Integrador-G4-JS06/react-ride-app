@@ -1,17 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import FormVeiculo from './components/veiculos/veiculocadastro/FormVeiculo'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import FormViagem from "./components/viagem/viagemcadastro/FormViagem";
+import ListaViagens from "./components/viagem/listaviagem/ListaViagem";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import ListaVeiculos from "./components/veiculos/listaveiculos/ListaVeiculos";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-     < FormVeiculo />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/cadastrarviagem" element={<FormViagem />} />
+          <Route path="/editarviagem/:id" element={<FormViagem />} />
+          <Route path="/viagens" element={<ListaViagens />} />
+          <Route path="/veiculos" element={<ListaVeiculos />} />
+
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
