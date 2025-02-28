@@ -45,24 +45,24 @@ function Navbar() {
       {menuOpen && (
         <nav className="container mx-auto w-2/4 px-2 absolute top-[81px] right-0  bg-[#293241] text-white py-2 xl:hidden">
           <ul className="flex flex-col items-start px-4">
-            <li className="w-full py-3  border-b border-gray-400 hover:text-gray-400 cursor-pointer">
+            <Link to="" className="w-full py-3  border-b border-gray-400 hover:text-gray-400 cursor-pointer">
               Login
-            </li>
-            <li className="w-full py-3 border-b hover:text-gray-400 cursor-pointer border-gray-400">
+            </Link>
+            <Link to="" className="w-full py-3 border-b hover:text-gray-400 cursor-pointer border-gray-400">
               Procurar Viagem
-            </li>
-            <li className="w-full py-3 border-b hover:text-gray-400 cursor-pointer border-gray-400">
+            </Link>
+            <Link to="" className="w-full py-3 border-b hover:text-gray-400 cursor-pointer border-gray-400">
               Viagens
-            </li>
-            <li className="w-full py-3 border-b hover:text-gray-400 cursor-pointer border-gray-400">
+            </Link>
+            <Link to="" className="w-full py-3 border-b hover:text-gray-400 cursor-pointer border-gray-400">
               Veículos
-            </li>
-            <li className="w-full py-3  border-b hover:text-gray-400 cursor-pointer border-gray-400">
+            </Link>
+            <Link to="/sobre" className="w-full py-3  border-b hover:text-gray-400 cursor-pointer border-gray-400">
               Sobre
-            </li>
-            <li className="w-full py-3 hover:text-gray-400 cursor-pointer">
+            </Link>
+            <Link to="" className="w-full py-3 hover:text-gray-400 cursor-pointer">
               Sair
-            </li>
+            </Link>
           </ul>
         </nav>
       )}
@@ -83,21 +83,21 @@ function Navbar() {
         {/* Opções de Navegação */}
         <nav>
           <ul className="flex gap-4 text-lg">
-            <li className="hover:text-gray-400 cursor-pointer">
+            <li className="hover:text-blue-500 cursor-pointer">
               Procurar Viagem
             </li>
             <li>
               <LineVertical size={32} color="gray" />
             </li>
-            <li className="hover:text-gray-400 cursor-pointer">Viagem</li>
+            <li className="hover:text-blue-500 cursor-pointer">Viagem</li>
             <li>
               <LineVertical size={32} color="gray" />
             </li>
-            <li className="hover:text-gray-400 cursor-pointer">Veiculo</li>
+            <li className="hover:text-blue-500 cursor-pointer">Veiculo</li>
             <li>
               <LineVertical size={32} color="gray" />
             </li>
-            <li className="hover:text-gray-400 cursor-pointer">Sobre</li>
+            <li className="hover:text-blue-500 cursor-pointer">Sobre</li>
             <li>
               <LineVertical size={32} color="gray" />
             </li>
